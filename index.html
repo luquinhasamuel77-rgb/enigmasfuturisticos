@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b18">
+<title>Enigmas do Futuro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<main>
+  <header class="top"><span class="logo">✦ ENIGMAS</span><span class="status"><i></i>SISTEMA ONLINE</span></header>
+
+  <section id="intro" class="screen active">
+    <p class="tag">EXPERIÊNCIA INTERATIVA • 2089</p>
+    <h1>O FUTURO PRECISA DE <span>VOCÊ.</span></h1>
+    <p class="lead">Uma inteligência desconhecida bloqueou o sistema central. Para restaurá-lo, ela precisa entender como você pensa. Resolva os enigmas e descubra qual <b>caminho do futuro</b> é o seu.</p>
+    <div class="stats"><div><b>06</b>ENIGMAS</div><div><b>05</b>CAMINHOS</div><div><b>0</b>ERRADOS</div></div>
+    <button class="btn" id="start">INICIAR MISSÃO ↗</button>
+    <p class="hint">Não precisa correr. Pense, escolha e descubra.</p>
+  </section>
+
+  <section id="game" class="screen">
+    <div class="bar"><div id="fill"></div></div>
+    <p class="tag" id="counter"></p>
+    <h2 id="title"></h2>
+    <p class="story" id="story"></p>
+    <div id="options"></div>
+  </section>
+
+  <section id="scan" class="screen">
+    <div class="ring"></div>
+    <h2>ANALISANDO SEU PERFIL...</h2>
+    <p class="lead" id="scanText">Lendo padrões de raciocínio</p>
+  </section>
+
+  <section id="result" class="screen">
+    <p class="tag">RELATÓRIO FINAL • SISTEMA RESTAURADO</p>
+    <div class="icon" id="rIcon"></div>
+    <p class="lead">Seu caminho do futuro é</p>
+    <h2 id="rName"></h2>
+    <p class="tagline" id="rTag"></p>
+    <p class="lead" id="rDesc"></p>
+    <div class="grid">
+      <div class="card"><h3>PROFISSÕES DO FUTURO</h3><ul id="rJobs"></ul></div>
+      <div class="card"><h3>MATÉRIAS PARA BRILHAR</h3><ul id="rSubs"></ul></div>
+    </div>
+    <div class="card wide"><h3>SEU MAPA COMPLETO</h3><div id="chart"></div></div>
+    <p class="lead" id="rSecond"></p>
+    <button class="btn" id="again">JOGAR NOVAMENTE ↻</button>
+  </section>
+
+  <footer>FEIRA PEDAGÓGICA • PROJETO ENIGMAS DO FUTURO</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
